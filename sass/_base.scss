@@ -1,0 +1,110 @@
+// -------------------------------------
+//   Default Reset
+// -------------------------------------
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: $main-font;
+  background-color: $light-grey;
+  overflow-x: hidden;
+}
+
+p {
+  @include rem(margin-bottom, 20);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  li {
+    float: left;
+    display: inline-block;
+  }
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container.test {
+  margin: 20px auto;
+}
+
+
+
+//---------------------------
+//  Heading
+//---------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  @include rem(font-size, 36);
+  @include rem(line-height, 43);
+  @include rem(margin-bottom, 20);
+}
+
+h2 {
+  @include rem(font-size, 24);
+  @include rem(line-height, 28);
+  @include rem(margin-bottom, 16);
+}
+
+h3 {
+  @include rem(font-size, 21);
+  @include rem(line-height, 25);
+  @include rem(margin-bottom, 12);
+}
+
+h4 {
+  @include rem(font-size, 18);
+  @include rem(line-height, 19);
+  @include rem(margin-bottom, 12);
+}
+
+h5 {
+  @include rem(font-size, 16);
+  @include rem(line-height, 17);
+  @include rem(margin-bottom, 12);
+}
+
+h6 {
+  @include rem(font-size, 14);
+  @include rem(line-height, 15);
+  @include rem(margin-bottom, 12);
+}
+
+
+
+// -------------------------------------
+//   Helper Classes
+// -------------------------------------
+.light,
+.light a {
+  color: $light-font;
+}
+
+.small {
+  @include rem(font-size, 12);
+}
+
+.itallic {
+  font-family: 'Avenir-Oblique';
+}

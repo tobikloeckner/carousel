@@ -1,0 +1,75 @@
+body {
+  background: blue;
+  overflow-x: hidden;
+}
+
+.custom-carousel {
+  width: 80%;
+  margin: 0 auto 50px;
+  position: relative;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    background: grey;
+  }
+
+  li {
+    position: absolute;
+    top: 0;
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    z-index: 1;
+    -webkit-transition: left 1s, opacity 1s;
+    transition: left 1s, opacity 1s;
+    opacity: 0;
+    background: white;
+
+    &.active {
+      left: 0 !important;
+      z-index: 2;
+      opacity: 1;
+    }
+  }
+
+  .cc-control {
+    padding: 10px 0;
+
+    .prev,
+    .next {
+      display: inline-block;
+      cursor: pointer;
+      padding: 10px;
+      background: white;
+    }
+
+    .prev {
+      float: left;
+    }
+
+    .next {
+      float: right;
+    }
+  }
+
+  .cc-pagination {
+    padding: 10px 0;
+    text-align: right;
+
+    span {
+      padding: 0px 8px;
+      border-radius: 50%;
+      background-color: white;
+      cursor: pointer;
+      margin-left: 6px;
+
+      &.active {
+        background-color: blue;
+        border: 1px solid white;
+      }
+    }
+  }
+}
