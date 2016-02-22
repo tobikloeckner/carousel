@@ -1,0 +1,2 @@
+# carousel
+Simple jQuery carousel.
