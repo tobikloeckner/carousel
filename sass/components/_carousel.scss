@@ -1,8 +1,3 @@
-body {
-  background: blue;
-  overflow-x: hidden;
-}
-
 .custom-carousel {
   width: 80%;
   margin: 0 auto 50px;
@@ -13,7 +8,6 @@ body {
     margin: 0;
     list-style-type: none;
     position: relative;
-    background: grey;
   }
 
   li {

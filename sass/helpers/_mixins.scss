@@ -51,3 +51,25 @@
     background-size: $width $height;
   }
 }
+
+
+
+// ----- Transition ---- /
+@mixin transition($property, $duration, $timing) {
+  -webkit-transition: $property $duration $timing;
+  -moz-transition: $property $duration $timing;
+  -o-transition: $property $duration $timing;
+  transition: $property $duration $timing;
+}
+
+
+
+// ----- Rotation ---- /
+@mixin rotate($deg){
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+//filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}

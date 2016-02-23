@@ -1,9 +1,9 @@
-//@import "fonts";
-@import "vars";
-@import "mixins";
-@import "base";
-//@import "header";
-//@import "footer";
-//@import "mediaqueries";
-
-@import "carousel";
+//@import "base/fonts";
+@import "helpers/vars";
+@import "helpers/mixins";
+@import "base/base";
+//@import "layout/header";
+//@import "layout/footer";
+@import "components/front";
+@import "components/carousel";
+//@import "layout/mediaqueries";

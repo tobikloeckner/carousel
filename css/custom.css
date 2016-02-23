@@ -6,7 +6,7 @@
 
 body {
   color: #3b3d47;
-  background-color: #f3f3f3;
+  background-color: blue;
   overflow-x: hidden;
 }
 
@@ -33,10 +33,6 @@ img {
   height: auto;
 }
 
-.container.test {
-  margin: 20px auto;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
@@ -46,13 +42,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #f3f3f3;
 }
 
-.itallic {
-  font-family: 'Avenir-Oblique';
-}
-
-body {
-  background: blue;
-  overflow-x: hidden;
+.container.test {
+  margin: 20px auto;
+  min-height: 50px;
 }
 
 .custom-carousel {
@@ -65,7 +57,6 @@ body {
   margin: 0;
   list-style-type: none;
   position: relative;
-  background: grey;
 }
 .custom-carousel li {
   position: absolute;

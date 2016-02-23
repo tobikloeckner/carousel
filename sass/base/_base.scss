@@ -9,7 +9,7 @@
 
 body {
   color: $main-font;
-  background-color: $light-grey;
+  background-color: blue;
   overflow-x: hidden;
 }
 
@@ -40,10 +40,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.container.test {
-  margin: 20px auto;
 }
 
 
@@ -103,8 +99,4 @@ h6 {
 
 .small {
   @include rem(font-size, 12);
-}
-
-.itallic {
-  font-family: 'Avenir-Oblique';
 }
